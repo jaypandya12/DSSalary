@@ -19,9 +19,9 @@ salary = df['Salary Estimate'].apply(lambda x: x.split('(')[0])
 minus_kd = salary.apply(lambda x : x.replace('K', '').replace('$', ''))
 
 min_hr = minus_kd.apply(lambda x : x.lower().replace('per hour', '').replace('employer provided salary:', ''))
-df['min_hr'] = min_hr.apply(lambda x : x.split('-')[0]).astype(int)
-df['max_hr'] = min_hr.apply(lambda x : x.split('-')[1]).astype(int)
-df['avg_salary'] = (df['min_hr'] + df['max_hr'])/2
+df['min_salary'] = min_hr.apply(lambda x : int(x.split('-')[0]))
+df['max_salary'] = min_hr.apply(lambda x : int(x.split('-')[1]))
+df['avg_salary'] = (df['min_salary'] + df['max_salary'])/2
 
 #Company name text only
 
@@ -64,7 +64,7 @@ df.columns
 
 df = df.drop('Unnamed: 0', axis =1)
 
-df.to_csv('salary_data_cleaned', index = False)
+df.to_csv('salary_data_cleaned.csv', index = False)
 
 
 

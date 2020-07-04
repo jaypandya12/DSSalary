@@ -1,4 +1,4 @@
-Job Title,Salary Estimate,Job Description,Rating,Company Name,Location,Headquarters,Size,Founded,Type of ownership,Industry,Sector,Revenue,Competitors,hourly,employer_provided,min_hr,max_hr,avg_salary,company_name,job_state,same_state,age,python,R,spark,aws,excel
+Job Title,Salary Estimate,Job Description,Rating,Company Name,Location,Headquarters,Size,Founded,Type of ownership,Industry,Sector,Revenue,Competitors,hourly,employer_provided,min_salary,max_salary,avg_salary,company_name,job_state,same_state,age,python,R,spark,aws,excel
 Data Scientist,$53K-$91K (Glassdoor est.),"Data Scientist
 Location: Albuquerque, NM
 Education Required: Bachelor’s degree required, preferably in math, engineering, business, or the sciences.
